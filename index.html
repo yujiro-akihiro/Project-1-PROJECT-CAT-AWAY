@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Cat W'ARRAY</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="start-screen">
+        <h3>Welcome to</h3>
+        <h1>PROJECT CAT AW(ARR)AY</h1>
+        <img id="PCW" src="img/Designer.png" />
+        <p>
+          Catwalk Chaos! Chaos on the runaway! Just before the 2024 Spring
+          Fashion Show, four mischievous kittens have invaded the red carpet!
+          With only 20 seconds until the show starts, you, a brilliant
+          programmer, must use your AirTag skills to guide these furry
+          fashionistas to their rightful VIP seats in the "Cat Array." Here's
+          the challenge: * 4 kittens appear on screen, each with a unique
+          costume and AirTag. * Answer questions based on their AirTag info
+          (name and seat number). * Lead all kittens to their correct seats
+          within the time limit. * Score points for each rescued cat (25 points
+          per cat!). * Aim for the highest score by reuniting all feline fashion
+          icons with their seats! Remember: Each seat in the "Cat Array" only
+          has a number, not a name. Use your AirTag wisdom to match kitten and
+          seat! Ready to save the show? Let the cat-tastic adventure begin!
+        </p>
+        <p>
+          Help remove the kittens from the red carpet before the fashion show
+          begins!
+        </p>
+        <button onclick="startGame()">Start</button>
+      </div>
+
+      <div id="game-screen" style="display: none">
+        <div id="cat-array">
+          <div class="cat-seat" id="vipCat01">Cat Seat 01</div>
+          <div class="cat-seat" id="vipCat02">Cat Seat 02</div>
+          <div class="cat-seat" id="vipCat03">Cat Seat 03</div>
+          <div class="cat-seat" id="vipCat04">Cat Seat 04</div>
+        </div>
+        <div class="red-carpet"></div>
+        <div id="cats-container"></div>
+        <div id="question-container" style="display: none"></div>
+        <div id="timer">Time Left: 20s</div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
