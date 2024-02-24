@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  max-width: 600px;
+  max-width: 680px;
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -25,7 +25,7 @@ body {
 }
 
 #PCW {
-  width: 600px;
+  width: 680px;
 }
 
 .cats-container {
@@ -41,11 +41,17 @@ body {
   display: inline-block;
   width: calc(12.5% - 10px); /* 全体の4分の1の幅に設定 */
   height: 50px; /* 高さを50pxに設定 */
-  background-color: lightgray;
-  margin: 5px; /* マージンを調整 */
+  background-color: goldenrod;
+  margin: 2px; /* マージンを調整 */
   border: 2px solid black;
   text-align: center;
   line-height: 50px; /* テキストを垂直方向に中央寄せ */
+}
+
+.seatsNr {
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 8px;
 }
 
 .red-carpet {

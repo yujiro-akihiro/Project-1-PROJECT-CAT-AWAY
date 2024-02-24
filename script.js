@@ -2,7 +2,16 @@ function startGame() {
   document.getElementById('start-screen').style.display = 'none';
   document.getElementById('game-screen').style.display = 'block';
 
+
+  const catArrayContainer = document.getElementById('cat-array');
+  catArrayContainer.style.display = 'flex';
+  catArrayContainer.style.justifyContent = 'center';
+
   const catsContainer = document.getElementById('cats-container');
+  catsContainer.style.display = 'flex';
+  catsContainer.style.justifyContent = 'center';
+
+
   const catNames = ['Vivilian', 'John pole G', 'Channering', 'GOTACHI'];
 
   // Display cats on the red carpet
@@ -11,7 +20,6 @@ function startGame() {
     catDiv.className = 'cat';
     catDiv.style.backgroundColor = getRandomColor();
     catsContainer.appendChild(catDiv);
-    // catsContainer.style.alignItems = "center";
   });
 
   // Display questions after 1 second
@@ -89,6 +97,7 @@ function startTimer(duration) {
 
     if (--timer < 0) {
       clearInterval(interval);
+      
       timerElement.textContent = "Game Over !!! This fashion show has been canceled due to the kittens' CAT WALK!!!";
     }
   }, 1000);
