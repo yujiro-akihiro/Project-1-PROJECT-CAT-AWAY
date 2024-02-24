@@ -97,7 +97,7 @@ function startTimer(duration) {
 
     if (--timer < 0) {
       clearInterval(interval);
-      
+
       timerElement.textContent = "Game Over !!! This fashion show has been canceled due to the kittens' CAT WALK!!!";
     }
   }, 1000);
