@@ -30,6 +30,8 @@ function displayQuestions() {
   const questionContainer = document.getElementById('question-container');
   questionContainer.style.display = 'block';
 
+  const userAnswers = []; // Array to store user's selected answers
+
   const questions = [
     {
       question: "How to get name and seat number from Vivian's AirTag?",
@@ -89,6 +91,7 @@ function displayQuestions() {
   startTimer(20);
 }
 
+
 function startTimer(duration) {
   let timer = duration;
   const timerElement = document.getElementById('timer');
@@ -97,6 +100,7 @@ function startTimer(duration) {
 
     if (--timer < 0) {
       clearInterval(interval);
+
 
       timerElement.textContent = "Game Over !!! This fashion show has been canceled due to the kittens' CAT WALK!!!";
     }
